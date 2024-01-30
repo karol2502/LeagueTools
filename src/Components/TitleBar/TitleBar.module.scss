@@ -1,0 +1,41 @@
+@use '../../Styles/defaultVariables' as vars;
+
+.titlebar {
+  height: 50px;
+  background: vars.$blue7;
+  user-select: none;
+  border-top: 2px solid vars.$gold5;
+  border-bottom: 1px solid vars.$grey2;
+  margin-bottom: 15px;
+  padding-inline: 10px;
+
+  .leftGroup {
+    gap: 20px;
+
+    .title {
+      user-select: none;
+    }
+  }
+
+  .buttons {
+    gap: 5px;
+
+    .button {
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+
+      path {
+        fill: vars.$grey1;
+      }
+
+      &:hover {
+        cursor: pointer;
+        path {
+          fill: vars.$gold1;
+        }
+      }
+    }
+  }
+}

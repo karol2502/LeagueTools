@@ -1,0 +1,61 @@
+@use '../../styles/defaultVariables' as vars;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'beaufort-bold';
+  text-transform: uppercase;
+}
+
+h1.typography {
+  font-size: vars.$fontSize-xxl;
+}
+
+h2.typography {
+  font-size: vars.$fontSize-xl;
+}
+
+h3.typography {
+  font-size: vars.$fontSize-lg;
+}
+
+h4.typography {
+  font-size: vars.$fontSize-md;
+}
+
+h5.typography {
+  font-size: vars.$fontSize-sm;
+}
+
+span.typography,
+p.typography {
+  font-family: 'spiegel-regular';
+  font-size: vars.$fontSize-xs;
+}
+
+span.xs,
+p.xs {
+  font-size: vars.$fontSize-sm;
+}
+span.sm,
+p.sm {
+  font-size: vars.$fontSize-sm;
+}
+span.md,
+p.md {
+  font-size: vars.$fontSize-md;
+}
+span.lg,
+p.lg {
+  font-size: vars.$fontSize-lg;
+}
+span.xl,
+p.xl {
+  font-size: vars.$fontSize-xl;
+}
+span.xxl,
+p.xxl {
+  font-size: vars.$fontSize-xxl;
+}

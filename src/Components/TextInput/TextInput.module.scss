@@ -1,0 +1,18 @@
+@use '../../styles/defaultVariables' as vars;
+
+.inputWrapper {
+  background: vars.$goldGradient;
+  padding: 1px;
+
+  .input {
+    background: vars.$hextechBlack;
+    color: vars.$gold1;
+    padding: 10px;
+
+    border: none;
+
+    &:focus {
+      filter: brightness(1.4);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@use '../../styles/defaultVariables' as vars;
+
+.button {
+  border-radius: 0;
+  color: vars.$gold1;
+
+  border: 2px solid transparent;
+  padding: 10px;
+  background: linear-gradient(vars.$greyCool, vars.$greyCool) padding-box,
+    vars.$goldGradient border-box;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+  }
+
+  &:active {
+    filter: brightness(0.7);
+  }
+
+  &:disabled {
+    filter: brightness(0.3);
+    cursor: not-allowed;
+  }
+}

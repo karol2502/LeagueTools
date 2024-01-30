@@ -1,0 +1,14 @@
+@use './defaultVariables' as vars;
+
+:root {
+  --toastify-color-success: #0b6c33;
+  --toastify-color-error: #8c1628;
+
+  --toastify-text-color-success: #f0e6d2;
+  --toastify-text-color-error: #f0e6d2;
+}
+
+.Toastify__toast {
+  border-radius: 0;
+  border: 2px solid vars.$gold4;
+}

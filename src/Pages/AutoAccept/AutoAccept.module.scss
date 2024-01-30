@@ -1,0 +1,12 @@
+@use '../../Styles/defaultVariables' as vars;
+
+.container {
+  gap: 15px;
+}
+
+.button {
+  &.disable {
+    background: linear-gradient(vars.$red, vars.$red) padding-box,
+      vars.$goldGradient border-box;
+  }
+}

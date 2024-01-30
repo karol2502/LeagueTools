@@ -1,0 +1,36 @@
+@use '../../styles/defaultVariables' as vars;
+
+$bg: #1a1c21;
+
+.tooltip {
+  position: absolute;
+  background-color: $bg;
+  padding: 5px 9px;
+  border: 1px solid vars.$gold4;
+  margin-left: 10px;
+  z-index: 1000;
+  animation: fadein 0.4s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tooltip::before {
+  position: absolute;
+  content: '';
+  background-color: $bg;
+  border-right: 1px solid vars.$gold4;
+  border-bottom: 1px solid vars.$gold4;
+  transform: rotate(135deg);
+  width: 12px;
+  height: 12px;
+  left: -7px;
+  top: 10px;
+  z-index: 1000;
+}

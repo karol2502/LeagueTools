@@ -1,0 +1,28 @@
+@use '../../styles/defaultVariables' as vars;
+
+.textareaWrapper {
+  background: vars.$goldGradient;
+  padding: 1px;
+
+  .textarea {
+    background: vars.$hextechBlack;
+    color: vars.$gold1;
+    padding: 10px;
+    border: none;
+    font-family: 'spiegel-regular';
+
+    &:focus {
+      filter: brightness(1.4);
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: vars.$gold5;
+
+        &:active {
+          background-color: vars.$gold6;
+        }
+      }
+    }
+  }
+}
