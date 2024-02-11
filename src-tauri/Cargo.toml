@@ -1,10 +1,10 @@
 [package]
 name = "leaguetools"
-version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
-repository = ""
+version = "0.0.1"
+description = "League Tools"
+authors = ["karol2502"]
+license = "MIT License"
+repository = "https://github.com/karol2502/LeagueTools"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
