@@ -14,6 +14,7 @@ const App = () => {
   // disable context menu on production build
   // https://github.com/tauri-apps/wry/issues/30#issuecomment-1061465700
   useEffect(() => {
+    document.title = 'LeagueTools';
     if (window.location.hostname !== 'tauri.localhost') {
       return;
     }
